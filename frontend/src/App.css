@@ -1,0 +1,271 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #f5f3ff;
+  background: #0b0a13;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  background:
+    radial-gradient(ellipse at 50% 0%, #241542 0%, transparent 48%),
+    #0b0a13;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  padding: 22px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #0b0a13eF;
+  border-bottom: 1px solid #ffffff12;
+  backdrop-filter: blur(14px);
+}
+
+.logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #bd8aff;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #c6bfd6;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #c49aff;
+}
+
+.hero {
+  min-height: 78vh;
+  padding: 130px 8% 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  color: #c49aff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(52px, 9vw, 94px);
+  line-height: 1.2;
+  letter-spacing: -4px;
+  background: linear-gradient(100deg, #fff, #c5a0ff 75%);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  font-size: clamp(21px, 3vw, 30px);
+  margin-bottom: 20px;
+}
+
+.hero > p:not(.section-title) {
+  max-width: 590px;
+  color: #aaa2bb;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-block;
+  margin: 28px 12px 0 0;
+  padding: 13px 21px;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.primary-btn {
+  background: #b78af5;
+  color: #170d25;
+}
+
+.secondary-btn {
+  border: 1px solid #55446e;
+  color: #f5f3ff;
+}
+
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 90px 8%;
+  scroll-margin-top: 85px;
+}
+
+.section h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(30px, 5vw, 45px);
+  margin-bottom: 24px;
+}
+
+.section > p:not(.section-title) {
+  color: #aaa2bb;
+  line-height: 1.9;
+  max-width: 780px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.card {
+  background: linear-gradient(145deg, #1b1727, #12101b);
+  border: 1px solid #ffffff12;
+  border-radius: 16px;
+  padding: 25px;
+  color: #e9e2f5;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #9b70d7;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.card p {
+  color: #aaa2bb;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.card span {
+  color: #c49aff;
+  font-size: 12px;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-section > p:not(.section-title) {
+  margin: 0 auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: #15121f;
+  color: white;
+  border: 1px solid #393044;
+  border-radius: 9px;
+  padding: 15px;
+  font: inherit;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #b78af5;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form button {
+  border: 0;
+  border-radius: 9px;
+  padding: 15px;
+  background: #b78af5;
+  color: #170d25;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px 15px;
+  color: #8e849e;
+  border-top: 1px solid #ffffff12;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    padding: 18px 5%;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .hero {
+    padding: 90px 7%;
+    min-height: 70vh;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .section {
+    padding: 65px 7%;
+  }
+}
